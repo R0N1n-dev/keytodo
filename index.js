@@ -7,8 +7,8 @@ const { NuxtApp } = require("@keystonejs/app-nuxt");
 const { MongooseAdapter: Adapter } = require("@keystonejs/adapter-mongoose");
 const PROJECT_NAME = "keynuxtRonin";
 const adapterConfig = {
-  mongoUri: process.env.MONGO_URI || "mongodb://localhost:27017/KNRTodo",
-}; //'mongodb+srv://ronin:harshn355@cluster0.ej1tv.mongodb.net/keynuxtRonin?retryWrites=true&w=majority' };
+  mongoUri: process.env.MONGO_URI, //|| "mongodb://localhost:27017/KNRTodo",
+};
 
 const keystone = new Keystone({
   adapter: new Adapter(adapterConfig),
